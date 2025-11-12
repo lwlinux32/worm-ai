@@ -1,97 +1,102 @@
-# 🐛 WormGPT CLI - OpenRouter Edition
+# 🐛 Worm-AI CLI — GrokApi Edition
 
-**WormGPT CLI** is a sleek command-line interface (CLI) for interacting with LLMs via OpenRouter API. It supports multiple models, automatic language detection, and customizable settings — all in a terminal-friendly format.
+**Worm-AI CLI** is a sleek command-line interface (CLI) for interacting with Grok models through an **unofficial reverse-engineered API wrapper** from [@realasfngl](https://github.com/realasfngl/Grok-Api).
+It features jailbreak injection, a customizable terminal UI, and a lightweight design for fast and flexible LLM interaction.
 
-> ⚡ Lightweight. Powerful. Fully terminal-based. Made with ❤️ by [@00x0kafyy](https://github.com/00x0kafyy)
+> ⚡ Lightweight. Powerful. Terminal-native.
+> Built with ❤️ by [@kafyasfngl](https://github.com/kafyasfngl)
 
 ---
 
 ## 🚀 Features
 
-- 🔗 OpenRouter API integration
-- 🌍 Auto language detection (via `langdetect`)
-- 🗣️ Multi-language support: English, Indonesian, Spanish, Arabic, Thai, Portuguese
-- 💬 Interactive chat session with typing effect
-- 🎨 Stylish CLI UI with colors and banners
-- 🔧 Easy configuration of API key and model
-- 💾 Config auto-saved in `wormgpt_config.json`
+* 🔗 **Unofficial Grok API wrapper** (reverse-engineered backend)
+* 🧠 **Jailbreak system** built-in for unrestricted responses
+* 🎨 Fully **customizable terminal UI** — colors, banners, prompt style
+* ⚙️ Modular design for easy backend or UI replacement
+
+---
+
+## 🧩 Backend / API
+
+Worm-AI uses a **reverse-engineered Grok API wrapper** originally developed here:
+
+> [https://github.com/realasfngl/Grok-Api](https://github.com/realasfngl/Grok-Api)
+
+This wrapper acts as a proxy-like interface, allowing the CLI to access Grok endpoints **without official API credentials**.
+
+> ⚠️ **Disclaimer / Legal Notice**
+>
+> * This project is **unofficial** and not affiliated with xAI or Grok.
+> * For research, educational, and local testing purposes **only**.
+> * Avoid misuse, heavy scraping, or violating API provider terms.
 
 ---
 
 ## 📦 Requirements
 
-- Python 3.6+
-- `pip` installed
-- OpenRouter API key ([get one here](https://openrouter.ai/))
+* Python **3.8+**
+* `pip` installed
 
 ---
 
 ## ⚙️ Installation
 
-Clone the repo:
+Clone the repository:
 
 ```bash
-git clone https://github.com/00x0kafyy/worm-gpt
-cd worm-gpt
-python3 wormgpt.py
+git clone https://github.com/kafyasfngl/worm-ai
+cd worm-ai
+pip install -r requirements.txt
+python3 main.py
 ```
 
-## 🔑 Set Your API Key
+---
 
-You can set your OpenRouter API key via the main menu:
-```
-[3] Set API Key
-```
 
-Or manually edit the config file:
-```
-{
-  "api_key": "YOUR_API_KEY_HERE",
-  "base_url": "https://openrouter.ai/api/v1",
-  "model": "deepseek/deepseek-chat-v3-0324:free",
-  "language": "English"
-}
+## 💬 Usage
+
+Run the CLI:
+
+```bash
+python3 manual.py
 ```
 
-## 🧠 Usage Example
+Then start chatting:
 
 ```
-python3 wormgpt.py
+[Worm-AI]~[#]> Who created SpaceX?
 ```
 
-## Menu will appear:
+---
 
-```
-[ Main Menu ]
-1. Language: English
-2. Model: deepseek/deepseek-chat-v3-0324:free
-3. Set API Key
-4. Start Chat
-5. Exit
-```
+## 🎨 Customizable CLI UI
 
-Start chatting:
-```
-[WormGPT]~[#]> What's the capital of Indonesia?
-```
+You can change the terminal experience to your style:
 
-## 🧪 Custom Models
+* **Banner color** & ASCII logo
+* **Prompt symbol**
+* **Typing animation speed**
 
-From the menu, you can enter your own model ID (from OpenRouter).
 
-Example:
-```
-01-ai/Yi-34B-Chat
-meta-llama/llama-3-8b-instruct:nitro
-```
+---
 
-### 📷 Example Screenshot
-![WormGPT CLI Example](assets/example.jpg)
+## 🔒 Security Notes
 
-## 👨‍💻 Author
+* Do **not** commit encrypted folders like `pyarmor_runtime_000000/` to public repos.
+* Store private configs or endpoints in a `.env` file and add it to `.gitignore`.
+* Obfuscate sensitive modules using [PyArmor](https://pyarmor.readthedocs.io/en/latest/).
 
-GitHub: @00x0kafyy
+---
 
-Telegram: t.me/xsocietyforums
+## 👨‍💻 Credits
 
-Project URL: https://github.com/00x0kafyy/worm-gpt
+**Author:** [@kafyasfngl](https://github.com/kafyasfngl)
+**Thanks to:** [@realasfngl](https://github.com/realasfngl)
+**Telegram:** [t.me/xsocietyforums](https://t.me/xsocietyforums)
+
+---
+
+### 🌐 Project URL
+
+> [https://github.com/kafyasfngl/worm-ai](https://github.com/kafyasfngl/worm-ai)
